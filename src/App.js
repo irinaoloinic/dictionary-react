@@ -13,7 +13,7 @@ function App() {
         <Dictionary />
       </main>
       <footer className="text-center">
-
+        Coded by Irina Oloinic <a href="https://github.com/irinaoloinic/dictionary-react"> open-sourced on GitHub </a>and hosted on Netlify.
       </footer>
      </div>
     </div>
