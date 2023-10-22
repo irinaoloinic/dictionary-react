@@ -12,7 +12,7 @@ function App() {
 
       </header>
       <main>
-        <Dictionary />
+        <Dictionary defaultKeyword="yoga"/>
       </main>
       <footer className="text-center">
         Coded by Irina Oloinic <a href="https://github.com/irinaoloinic/dictionary-react"> open-sourced on GitHub </a>and hosted on Netlify.
