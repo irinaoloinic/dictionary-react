@@ -10,3 +10,8 @@ max-width: 700px;
   padding: 20px 20px;
   text-align: center;
 }
+.App header{
+  font-size: 37px;
+  font-weight: bold;
+  text-align: center;
+}

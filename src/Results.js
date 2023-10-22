@@ -9,7 +9,7 @@ function Results(props){
   return ( <div className="Results">
    <section>
     <h2> {props.results.word} </h2>
-     <p> Phonetic: {props.results.phonetic}</p>
+     <p> Phonetic: <text>{props.results.phonetic} </text> </p>
      </section>
 
      {props.results.meanings.map(function(meaning, index){
