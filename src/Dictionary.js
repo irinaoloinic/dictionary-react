@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
-import Results from "./Results";
 import Photos from "./Photos";
+import Results from "./Results";
 import "./Dictionary.css";
 
 
@@ -17,8 +17,8 @@ function handleResponse(response){
 
 }  
  function handlePexelResponse(response){
-console.log(response);
-setPhotos(response.data.photos);
+ console.log(response);
+ setPhotos(response.data.photos);
  }
 
  function search(){
@@ -27,7 +27,7 @@ setPhotos(response.data.photos);
   axios.get(apiUrl).then(handleResponse);
 
   let pexelApiKey = "q4AwuNTDCaEdF6i9UbyCpFI3L6tsOlK0J6ivdPp4KFAWw6J281LCQVO7";
-  let pexelApiUrl = `"https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
+  let pexelApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
   let headers =  { Authorization: `${pexelApiKey}` };
   axios.get(pexelApiUrl, { headers: headers }).then(handlePexelResponse).catch(err => console.err(err));;
  }
